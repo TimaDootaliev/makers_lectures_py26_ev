@@ -1,0 +1,30 @@
+sudo apt install git - установка системы git
+
+git --version - проверка версии
+
+git config --global user.name "YourNickname"
+git config --global user.email "your.email@index.com" - настройка 
+имени и почты в системе git
+
+git config --list - проверка настроек
+
+ssh-keygen - генерация ssh ключа
+
+cat ~/.ssh/id_rsa.pub - получение ssh ключа
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
