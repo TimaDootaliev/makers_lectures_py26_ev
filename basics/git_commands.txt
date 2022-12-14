@@ -12,7 +12,16 @@ ssh-keygen - генерация ssh ключа
 
 cat ~/.ssh/id_rsa.pub - получение ssh ключа
 
-
+git init - инициализирует/превращает текущую директорию в 
+git-репозиторий
+git add название_файла / . - отслеживание изменений 
+указанных/всех файлов
+git commit -m "message for commit" - создание версии кода с 
+сообщением
+git remote add <name_of_remote> <ssh_key> - связывание локального 
+репозитория с удаленным
+git push <name_of_remote> <branch_name> - отправка версии на 
+гитхаб
 
 
 
