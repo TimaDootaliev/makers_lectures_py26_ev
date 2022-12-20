@@ -101,3 +101,21 @@ frog = 'Quak'
 # print(string3[start:stop:step])
 # print(string3[::])
 # print(string3[::-1])
+
+""" Экранирование строк """
+
+# print('Hello\nworld')
+# """  
+# Hello
+# world
+# """
+# print('Hello\n\tworld')
+# """  
+# Hello
+#     world
+# """
+
+# path = "C:\\Users\\new\\tanks"
+# print(path)
+
+
