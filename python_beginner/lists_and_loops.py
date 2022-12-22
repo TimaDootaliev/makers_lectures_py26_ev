@@ -146,3 +146,101 @@ list2 = [4, 5, 6]
 #         new_nums.append(num)
 
 # print(new_nums)
+
+
+# list_of_lists = [[1, 2, 3], ['Katya', 'Masha', 'Sanya'], [4, 5, 6]]
+# for list_ in list_of_lists:
+#     for element in list_:
+#         print(element)
+
+# for element in list_of_lists[-1]:
+#     print(element)
+
+# data_types = [int, str, bool, list, tuple, dict, set, None]
+# # Итерируемые: list, str, tuple, dict, set
+# # Неитерируемые: int, bool, None
+# iter_objs = []
+# non_iter_objs = []
+# for type_ in data_types:
+#     if '__iter__' in dir(type_):
+#         iter_objs.append(type_)
+#     else:
+#         non_iter_objs.append(type_)
+
+# print('Итерируемые', iter_objs)
+# print('Неитерируемые', non_iter_objs)
+
+
+# while условие
+# while - цикл, который работает до тех пор, пока условие возвращает True
+
+# counter = 0
+# while counter < 5:
+#     print(counter)
+#     print('hello world')
+#     counter += 1
+
+# while True: # бесконечный цикл
+#     print(...)
+
+# CTRL + C - остановка бесконечного цикла/процесса
+
+
+# msg = input('Введите сообщение или stop ')
+# while msg != 'stop':
+#     print(f'Ваше сообщение\n{msg}')
+#     msg = input('Введите сообщение или stop ')
+
+# while True:
+#     msg = input('Введите сообщение или stop ')
+#     if msg == 'stop':
+#         print('цикл остановлен')
+#         break
+#     print(f'Ваше сообщение\n{msg}')
+
+# break - оператор для остановки цикла
+# continue - начинает цикл заново, пропуская остальное тело цикла
+
+# a = 'AiMininigisdiais'
+# b = ''
+# for letter in a:
+#     if letter == 'i':
+#         continue
+#     b += letter
+# print(b)
+
+
+""" else в циклах """
+# nums = range(0, 101, 2)
+# result = 0
+# for num in nums:
+#     if num == 50:
+#         break
+#     result += num
+# else:
+#     print(result)
+
+
+# list_of_names = ['Serega', 'Vano', 'Dimon', 'Beliy']
+# guests_q = 4
+# while guests_q > 0:
+#     name_of_quest = input('Введи имя ')
+#     if name_of_quest in list_of_names:
+#         print('Вход закрыт!')
+#         break
+#     guests_q -= 1
+# else:
+#     print('Начинаем вечеринку!!!!!!!!!!')
+
+
+# list_of_nums = [1, 2, 3, 4]
+# for num in list_of_nums:
+#     print(num)
+
+# list_of_names = ['Serega', 'Vano', 'Dimon', 'Beliy']
+# counter = 0
+# while counter != len(list_of_names):
+#     print(list_of_names[counter])
+#     counter += 1
+    # print(counter)
+
