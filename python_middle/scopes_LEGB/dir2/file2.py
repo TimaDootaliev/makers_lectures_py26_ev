@@ -1,1 +1,1 @@
-from dir1 import
+from dir1 import *

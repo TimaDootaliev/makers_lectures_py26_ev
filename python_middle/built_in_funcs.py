@@ -149,4 +149,103 @@ def bigger(x, y):
 # nums = map(lambda x: x ** 2, range(10))
 # for i in nums:
 #     print(i)
+# for i in nums:
+#     print(i)
+# print(nums)
 
+# from typing import Iterable
+
+# def get_items(nums: Iterable):
+#     for num in nums:
+#         return num # Wrong
+
+# result = get_items([1, 2, 3, 4])
+# print(result)
+
+
+# def generate_items(nums: Iterable):
+#     for num in nums:
+#         yield num * 2
+#         print('yield отработал')
+    
+# result = generate_items([1, 2, 3, 4])
+# print(result)
+# for i in result:
+#     print(i)
+# for i in result:
+#     print(i)
+
+# a = [1, 2, 3, 4]
+# b = iter(a)
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+# print(next(b))
+
+# a = [1, 2, 3, 4]
+# b = iter(a)
+# while True:
+#     try:
+#         print(next(b))
+#     except StopIteration:
+#         break
+
+
+# def func(x: int) -> int:
+#     return x
+
+# print(func('string'))
+
+
+# callable()
+# a = 10
+# print(callable(a)) # False
+# b = lambda x: x + 10
+# print(callable(b)) # True
+# b(10) # 20
+# c = lambda: 'string'
+# tasks = [a, c]
+# for task in tasks:
+#     if callable(task):
+#         print(task())
+#     else:
+#         print(task)
+
+
+# eval()
+# exec()
+
+# one_line_code = 'print([i for i in range(10)])'
+# eval(one_line_code)
+
+# more_than_one_line_code = """
+# b = 10
+# for i in range(b):
+#     print(i)
+# """
+# exec(more_than_one_line_code)
+
+
+# eval(f'print("Результат: ", {int(input())}{input()}{int(input())})')
+
+
+"""  
+Задание 4
+Создайте переменную list_ и сохраните в нем список из чисел. Создайте новый список, состоящий из квадратов этих чисел, результат сохраните в новой переменной result и выведите в консоль.
+
+Пример:
+
+list_ = [1, 2, 3, 4]  
+Вывод:
+
+[1, 4, 9, 16]  
+Используйте встроенную функцию.
+"""
+# list_ = [1, 2, 3, 4] 
+# result = map(lambda x: x ** 2, list_)
+# print(list(result))
+# result = []
+# for i in list_:
+#     result.append(i ** 2)
+# print(result)
