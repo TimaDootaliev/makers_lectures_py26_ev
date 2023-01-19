@@ -137,3 +137,4 @@ with функция() as название:
 #         image.seek(0)
 #         image_copy.write(image.read())
 
+

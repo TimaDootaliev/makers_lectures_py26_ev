@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Bear",
+        "price": 100,
+        "in_stock": true
+    },
+    {
+        "title": "Car",
+        "price": 250,
+        "in_stock": false
+    }
+]
