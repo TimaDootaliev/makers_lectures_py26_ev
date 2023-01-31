@@ -107,3 +107,90 @@ car1 = Car('Mercedes', 'red')
 Абстракция
 Ассоциация (Агрегация, Композиция)
 """
+
+# getattr(obj, attr) - функция для получения атрибута из объекта
+
+class Animal:
+    def __init__(self, legs, teeth, eyes, voice):
+        self.legs = legs
+        self.teeth = teeth
+        self.eyes = eyes
+        self.voice = voice
+
+    def make_voice(self):
+        print(self.voice)
+
+
+han = Animal(2, True, 2, 'Kukareku')
+cat = Animal(4, True, 2, 'Meow')
+# print(han.eyes)
+# print(getattr(han, 'eyes', None))
+
+han.wings = 'White'
+# print(han.wings)
+# print(cat.wings) # Error
+# setattr(han, 'tail', 'Black')
+# print(han.tail)
+
+# print(hasattr(han, 'hands')) # False
+
+
+# print(isinstance(han, Animal)) # True
+# print(isinstance(10, int)) # True
+
+
+class Product:
+    def __init__(
+        self,
+        price: float,
+        in_stock: bool,
+        description: str,
+        title: str = 'Товар',
+    ):
+        if not isinstance(price, float):
+            raise ValueError('Неверное значения для цены')
+        self.title = title
+        self.price = price
+        self.in_stock = in_stock
+        self.description = description
+
+
+prod1 = Product(10.02, True, 'some desc', 'Big Bear')
+
+prod2 = {
+    'title': 'Toy Car',
+    'price': 2133,
+    'description': 'Some description',
+    'in_stock': False
+}
+
+# prod1.price
+# prod2['price']
+
+
+from dataclasses import dataclass
+
+# @dataclass()
+# class Product:
+#     title: str
+#     price: float
+#     in_stock: bool
+#     description: str
+
+# prod3 = Product('Phone', 29.08, True, 'Some description')
+# print(prod3.__dict__)
+# prod3.quantity = 10
+# print(prod3.__dict__)
+
+class Human:
+    __slots__ = ['height', 'weight', 'age', 'name']
+
+    def __init__(self, height, weight, age, name):
+        self.height = height
+        self.weight = weight
+        self.age = age
+        self.name = name
+
+
+hum1 = Human(170, 70, 25, 'Айбек')
+# print(hum1.__dict__) # Error
