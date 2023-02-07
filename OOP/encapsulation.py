@@ -71,15 +71,15 @@ class Light:
     __MIN_BRIGHTNESS = 10
     __MAX_BRIGHTNESS = 100
 
-    def __init__(self, brightness):
+    def __init__(self, brightness: int) -> None:
         self.__brightness = brightness
 
     @property
     def brightness(self):
         return self.__brightness
     
-    @brightness.setter
-    def brightness(self, value):
+    # @brightness.setter
+    def brightness(self, value) -> None:
         if value < self.__MIN_BRIGHTNESS:
             raise Exception('Низкая яркость')
         elif value > self.__MAX_BRIGHTNESS:
@@ -94,7 +94,6 @@ class Light:
 
     # bright = property(brightness, set_brightness)
     
-
     def turn_off(self):
         self.__is_on = False
 
@@ -109,7 +108,7 @@ light = Light(50)
 # light.turn_off()
 # print(light.is_on())
 # print(light.brightness)
-# light.brightness = 70
+# light.brightness = 1250
 # print(light.brightness)
 
 
