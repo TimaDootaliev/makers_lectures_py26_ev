@@ -194,3 +194,4 @@ class Human:
 
 hum1 = Human(170, 70, 25, 'Айбек')
 # print(hum1.__dict__) # Error
+

@@ -33,6 +33,7 @@ class MethodTypes:
         print('Hello world')
         return x + y
 
+
 obj = MethodTypes(1)
 obj2 = MethodTypes(20)
 # obj.instance_method()
