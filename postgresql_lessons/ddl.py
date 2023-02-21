@@ -12,9 +12,16 @@ CREATE USER db_username [WITH различные права]; - создание
 ALTER USER db_username WITH PASSWORD 'some_password'; - изменение юзера
 DROP USER db_username; - удаление пользователя
 DROP DATABASE db_name; - удаление БД
+
 CREATE TABLE table_name(
     column_name data_type [constraint]
 ) - создание таблиц
+
+ALTER TABLE
+ALTER TABLE table_name ADD CONSTRAINT constraint_name CONSTRAINT (column_name); - добавление ограничения
+ALTER TABLE table_name DROP CONSTRAINT constraint_name; - удаление ограничения
+ALTER TABLE table_name ADD COLUMN column_name data_type [constraint]; - добавление столбца
+ALTER TABLE table_name RENAME TO new_table_name; - смена имени таблицы
 """
 
 data_types = """
@@ -54,4 +61,18 @@ timestamp - дата и время - 2023-02-20 20:15:07.359620
 date - дата - 2023-02-20
 time - время - 20:15:07.359620
 interval - временной промежуток
+
+Enumerated Types - ограничение вариантов выбора, работает со строками
+CREATE TYPE type_name AS ENUM ('value1', 'value2')
+"""
+
+constraints = """  
+Ограничения
+
+NOT NULL, NULL - можно ли указать пустое значение
+UNIQUE - могут ли значения в столбце повторяться
+CHECK(условие) - подходит ли значение под условие
+DEFAULT(значение) - выставляет значение по умолчанию
+PRIMARY KEY - определяет, какой столбец будет идентификатором (NOT NULL + UNIQUE)
+FOREIGN KEY - ссылка на другую таблицу
 """
