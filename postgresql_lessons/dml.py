@@ -53,6 +53,14 @@ JOIN - соединяет все данные
 RIGHT JOIN - соединяет данные из правой таблицы
 LEFT JOIN - соединяет данные с левой таблицы
 INNER JOIN - соединяет только те данные, которые имеют пересечения
+
+SELECT p.name, c.name FROM left_table AS p JOIN right_table AS c ON condition;
+
+UPDATE table_name SET field1=new_value;
+UPDATE table_name SET field1=new_value WHERE condition;
+
+DELETE FROM table_name;
+DELETE FROM table_name WHERE condition;
 """
 
 # TODO: добавить 10 записей в таблицу users и 10 записей в таблицу posts. Сделать так, чтобы у некоторых пользователей были посты, у некоторых нет
